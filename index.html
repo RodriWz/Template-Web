@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id" class="bg-black text-[#39ff14] font-mono scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio - Grey</title>
+  <link href="./output.css" rel="stylesheet" />
+</head>
+
+<body class="bg-[#0f0f0f] text-[#39ff14]">
+
+  <!-- Navbar -->
+  <nav class="fixed w-full top-0 left-0 z-50 bg-black/80 backdrop-blur-sm border-b border-[#39ff14] shadow-lg">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-xl font-bold tracking-widest text-[#39ff14]">Grey<span class="text-pink-500">Dev</span></h1>
+      <ul class="flex space-x-6 text-sm">
+        <li><a href="#beranda" class="hover:text-pink-500">Beranda</a></li>
+        <li><a href="#tentang" class="hover:text-pink-500">Tentang</a></li>
+        <li><a href="#portofolio" class="hover:text-pink-500">Portofolio</a></li>
+        <li><a href="#kontak" class="hover:text-pink-500">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Beranda -->
+  <section id="beranda" class="min-h-screen flex items-center justify-center bg-gradient-to-b from-black via-[#0f0f0f] to-black px-6 pt-24">
+    <div class="text-center">
+      <h2 class="text-3xl md:text-5xl font-bold mb-4">Halo, saya <span class="text-pink-500">Grey</span></h2>
+      <p class="text-lg mb-6">Web Developer | Mobile/Android Developer | Freelancer</p>
+      <a href="#portofolio" class="bg-pink-500 hover:bg-pink-600 text-black px-6 py-2 rounded-full font-bold">Lihat Karya Saya</a>
+    </div>
+  </section>
+
+  <!-- Tentang -->
+  <section id="tentang" class="py-20 px-6 bg-[#121212] border-t border-[#39ff14]">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-2xl font-bold mb-4">Tentang Saya</h2>
+      <p class="text-base text-gray-300">
+        Saya adalah pengembang web yang fokus pada tampilan interaktif dan pengalaman pengguna. Suka eksplorasi teknologi, desain neon, dan membangun aplikasi yang unik.
+      </p>
+    </div>
+  </section>
+
+  <!-- Portofolio -->
+  <section id="portofolio" class="py-20 px-6 bg-black border-t border-[#39ff14]">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl font-bold text-center mb-8">Portofolio</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Item 1 -->
+        <div class="bg-[#1a1a1a] border border-[#39ff14] p-4 rounded-xl hover:shadow-neon transition-all">
+          <img src="img/projek1.jpg" alt="Projek 1" class="rounded mb-3">
+          <h3 class="text-xl font-semibold mb-1">Sistem Pendaftaran Gym</h3>
+          <p class="text-sm text-gray-400">Web xgym diambil dari template di github dan ditambahkan admin page</p>
+        </div>
+        <!-- Item 2 -->
+        <div class="bg-[#1a1a1a] border border-[#39ff14] p-4 rounded-xl hover:shadow-neon transition-all">
+          <img src="img/projek2.jpg" alt="Projek 2" class="rounded mb-3">
+          <h3 class="text-xl font-semibold mb-1">Aplikasi Sistem Bill</h3>
+          <p class="text-sm text-gray-400">Aplikasi Sistem Bill Warnet Menggunakan Bahasa Java.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak" class="py-20 px-6 bg-[#121212] border-t border-[#39ff14]">
+    <div class="max-w-md mx-auto text-center">
+      <h2 class="text-2xl font-bold mb-6">Kontak</h2>
+      <form action="mailto:kamu@email.com" method="post" enctype="text/plain" class="flex flex-col space-y-4">
+        <input type="text" name="nama" placeholder="Nama Anda" required class="bg-black border border-[#39ff14] px-4 py-2 rounded">
+        <input type="email" name="email" placeholder="Email Anda" required class="bg-black border border-[#39ff14] px-4 py-2 rounded">
+        <textarea name="pesan" placeholder="Pesan Anda" required class="bg-black border border-[#39ff14] px-4 py-2 rounded h-32"></textarea>
+        <button type="submit" class="bg-pink-500 hover:bg-pink-600 text-black font-bold px-6 py-2 rounded-full">Kirim</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black py-6 text-center text-sm border-t border-[#39ff14] text-gray-400">
+    <p>© 2025 Grey</p>
+  </footer>
+
+</body>
+
+</html>
