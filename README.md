@@ -8,7 +8,7 @@ Proyek ini adalah template portofolio pribadi sederhana yang dibuat dengan HTML,
 
 🟢 Klik link berikut untuk melihat versi live dari proyek ini:
 
-👉 **[Lihat Website di GitHub Pages](https://rodriwz.github.io/Template-Sederhana-Portofolio/)**
+👉 **[Lihat Website di GitHub Pages](https://rodriwz.github.io/Template-Web/)**
 
 ---
 
