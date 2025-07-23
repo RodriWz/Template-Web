@@ -6,38 +6,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portofolio - Grey</title>
   <link href="output.css" rel="stylesheet" />
+  <style>
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fadeIn {
+      animation: fadeIn 1s ease-out forwards;
+    }
+
+    .shadow-neon {
+      box-shadow: 0 0 15px #39ff14;
+    }
+
+    .hover\:shadow-neon:hover {
+      box-shadow: 0 0 25px #39ff14, 0 0 50px #39ff14;
+    }
+
+    .glass {
+      background: rgba(15, 15, 15, 0.6);
+      backdrop-filter: blur(8px);
+      border: 1px solid #39ff14;
+    }
+  </style>
 </head>
 
 <body class="bg-[#0f0f0f] text-[#39ff14]">
 
   <!-- Navbar -->
-  <nav class="fixed w-full top-0 left-0 z-50 bg-black/80 backdrop-blur-sm border-b border-[#39ff14] shadow-lg">
+  <nav class="fixed w-full top-0 left-0 z-50 glass shadow-lg">
     <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-      <h1 class="text-xl font-bold tracking-widest text-[#39ff14]">Grey<span class="text-pink-500">Dev</span></h1>
+      <h1 class="text-xl font-bold tracking-widest">Grey<span class="text-pink-500">Dev</span></h1>
       <ul class="flex space-x-6 text-sm">
-        <li><a href="#beranda" class="hover:text-pink-500">Beranda</a></li>
-        <li><a href="#tentang" class="hover:text-pink-500">Tentang</a></li>
-        <li><a href="#portofolio" class="hover:text-pink-500">Portofolio</a></li>
-        <li><a href="#kontak" class="hover:text-pink-500">Kontak</a></li>
+        <li><a href="#beranda" class="hover:text-pink-500 transition">Beranda</a></li>
+        <li><a href="#tentang" class="hover:text-pink-500 transition">Tentang</a></li>
+        <li><a href="#portofolio" class="hover:text-pink-500 transition">Portofolio</a></li>
+        <li><a href="#kontak" class="hover:text-pink-500 transition">Kontak</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- Beranda -->
-  <section id="beranda" class="min-h-screen flex items-center justify-center bg-gradient-to-b from-black via-[#0f0f0f] to-black px-6 pt-24">
-    <div class="text-center">
-      <h2 class="text-3xl md:text-5xl font-bold mb-4">Halo, saya <span class="text-pink-500">Grey</span></h2>
-      <p class="text-lg mb-6">Web Developer | Mobile/Android Developer | Freelancer</p>
-      <a href="#portofolio" class="bg-pink-500 hover:bg-pink-600 text-black px-6 py-2 rounded-full font-bold">Lihat Karya Saya</a>
+  <section id="beranda" class="min-h-screen flex items-center justify-center px-6 pt-24 bg-gradient-to-b from-black via-[#0f0f0f] to-black">
+    <div class="text-center animate-fadeIn">
+      <h2 class="text-4xl md:text-6xl font-bold mb-4">Halo, saya <span class="text-pink-500">Grey</span></h2>
+      <p class="text-lg mb-6">Web Developer | Android Developer | Freelancer</p>
+      <a href="#portofolio" class="bg-pink-500 hover:bg-pink-600 text-black px-6 py-3 rounded-full font-bold transition duration-300">Lihat Karya Saya</a>
     </div>
   </section>
 
   <!-- Tentang -->
   <section id="tentang" class="py-20 px-6 bg-[#121212] border-t border-[#39ff14]">
-    <div class="max-w-3xl mx-auto text-center">
-      <h2 class="text-2xl font-bold mb-4">Tentang Saya</h2>
-      <p class="text-base text-gray-300">
-        Saya adalah pengembang web yang fokus pada tampilan interaktif dan pengalaman pengguna. Suka eksplorasi teknologi, desain neon, dan membangun aplikasi yang unik.
+    <div class="max-w-3xl mx-auto text-center animate-fadeIn">
+      <h2 class="text-3xl font-bold mb-4">Tentang Saya</h2>
+      <p class="text-base text-gray-300 leading-relaxed">
+        Saya adalah pengembang web yang fokus pada tampilan interaktif dan pengalaman pengguna. Suka eksplorasi teknologi, desain neon, dan membangun aplikasi yang unik dan berguna.
       </p>
     </div>
   </section>
@@ -45,40 +76,42 @@
   <!-- Portofolio -->
   <section id="portofolio" class="py-20 px-6 bg-black border-t border-[#39ff14]">
     <div class="max-w-6xl mx-auto">
-      <h2 class="text-2xl font-bold text-center mb-8">Portofolio</h2>
-      <div class="grid md:grid-cols-2 gap-8">
+      <h2 class="text-3xl font-bold text-center mb-12 animate-fadeIn">Portofolio</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Item 1 -->
-        <div class="bg-[#1a1a1a] border border-[#39ff14] p-4 rounded-xl hover:shadow-neon transition-all">
+        <div class="bg-[#1a1a1a] border border-[#39ff14] p-4 rounded-xl hover:scale-105 hover:shadow-neon transition-all duration-300 animate-fadeIn">
           <img src="img/projek1.jpg" alt="Projek 1" class="rounded mb-3">
           <h3 class="text-xl font-semibold mb-1">Sistem Pendaftaran Gym</h3>
-          <p class="text-sm text-gray-400">Web xgym diambil dari template di github dan ditambahkan admin page</p>
+          <p class="text-sm text-gray-400">Web xgym diambil dari template GitHub dan dikembangkan halaman admin-nya.</p>
         </div>
         <!-- Item 2 -->
-        <div class="bg-[#1a1a1a] border border-[#39ff14] p-4 rounded-xl hover:shadow-neon transition-all">
+        <div class="bg-[#1a1a1a] border border-[#39ff14] p-4 rounded-xl hover:scale-105 hover:shadow-neon transition-all duration-300 animate-fadeIn">
           <img src="img/projek2.jpg" alt="Projek 2" class="rounded mb-3">
           <h3 class="text-xl font-semibold mb-1">Aplikasi Sistem Bill</h3>
-          <p class="text-sm text-gray-400">Aplikasi Sistem Bill Warnet Menggunakan Bahasa Java.</p>
+          <p class="text-sm text-gray-400">Aplikasi Sistem Billing Warnet menggunakan Java Android.</p>
         </div>
+        <!-- Tambah item lain -->
+        <!-- ... -->
       </div>
     </div>
   </section>
 
   <!-- Kontak -->
   <section id="kontak" class="py-20 px-6 bg-[#121212] border-t border-[#39ff14]">
-    <div class="max-w-md mx-auto text-center">
-      <h2 class="text-2xl font-bold mb-6">Kontak</h2>
+    <div class="max-w-md mx-auto text-center animate-fadeIn">
+      <h2 class="text-3xl font-bold mb-6">Kontak</h2>
       <form action="mailto:kamu@email.com" method="post" enctype="text/plain" class="flex flex-col space-y-4">
-        <input type="text" name="nama" placeholder="Nama Anda" required class="bg-black border border-[#39ff14] px-4 py-2 rounded">
-        <input type="email" name="email" placeholder="Email Anda" required class="bg-black border border-[#39ff14] px-4 py-2 rounded">
-        <textarea name="pesan" placeholder="Pesan Anda" required class="bg-black border border-[#39ff14] px-4 py-2 rounded h-32"></textarea>
-        <button type="submit" class="bg-pink-500 hover:bg-pink-600 text-black font-bold px-6 py-2 rounded-full">Kirim</button>
+        <input type="text" name="nama" placeholder="Nama Anda" required class="bg-black border border-[#39ff14] px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-pink-500">
+        <input type="email" name="email" placeholder="Email Anda" required class="bg-black border border-[#39ff14] px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-pink-500">
+        <textarea name="pesan" placeholder="Pesan Anda" required class="bg-black border border-[#39ff14] px-4 py-2 rounded h-32 focus:outline-none focus:ring-2 focus:ring-pink-500"></textarea>
+        <button type="submit" class="bg-pink-500 hover:bg-pink-600 text-black font-bold px-6 py-2 rounded-full transition duration-300">Kirim</button>
       </form>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-black py-6 text-center text-sm border-t border-[#39ff14] text-gray-400">
-    <p>© 2025 Grey</p>
+  <footer class="bg-black py-6 text-center text-sm border-t border-[#39ff14] text-gray-400 animate-fadeIn">
+    <p>© 2025 GreyDev. Dibuat dengan ❤️ dan Tailwind CSS.</p>
   </footer>
 
 </body>

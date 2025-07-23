@@ -1010,3 +1010,45 @@
     }
   }
 }
+
+/* === Custom Utilities === */
+
+@layer utilities {
+  .shadow-neon {
+    box-shadow: 0 0 15px #39ff14;
+  }
+
+  .hover\:shadow-neon:hover {
+    box-shadow: 0 0 25px #39ff14, 0 0 50px #39ff14;
+  }
+}
+
+/* === Animasi Custom === */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+/* === Scrollbar Cyberpunk Style === */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f0f0f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #39ff14;
+  border-radius: 10px;
+}
